@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxoye60s0dqy0"]
+
+[ext_resource type="Script" uid="uid://ovabugnqys88" path="res://center.gd" id="1_pq8q7"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_pq8q7"]
+radius = 0.1
+
+[node name="root" type="Node3D"]
+
+[node name="center" type="Node3D" parent="."]
+script = ExtResource("1_pq8q7")
+yaw = -64.84
+pitch = -15.26
+roll = -32.08
+front = Vector3(0.873211, -0.2632, -0.410157)
+up = Vector3(-0.0239444, 0.817433, -0.575526)
+right = Vector3(0.486754, 0.512377, 0.707489)
+
+[node name="item" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75078, 0, -0.00100064)
+visible = false
+mesh = SubResource("CapsuleMesh_pq8q7")
